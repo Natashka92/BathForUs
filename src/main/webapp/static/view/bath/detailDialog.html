@@ -75,7 +75,7 @@
                                 <md-card>
                                     <md-card-title>
                                         <md-card-title-media>
-                                            <div class="md-media-sm card-media"><img src="static/img/123.png"></div>
+                                            <div class="md-media-sm card-media"><img src="http://intranet-epby.ericpol.int/_img/phone/{{$root.user.name}}.jpg"></div>
                                         </md-card-title-media>
                                         <md-card-title-text>
                                             <span class="md-headline" style="padding-left: 20px;">{{$root.user.name}}</span>
@@ -94,14 +94,14 @@
                                 <md-card>
                                     <md-card-title>
                                         <md-card-title-media>
-                                            <div class="md-media-sm card-media"><img src="{{comment.user.iconPath}}"></div>
+                                            <div class="md-media-sm card-media"><img src="http://intranet-epby.ericpol.int/_img/phone/{{comment.user.uid}}.jpg"></div>
                                         </md-card-title-media>
-                                        <md-card-title-text>
+                                        <md-card-title-text flex>
                                             <span class="md-subhead" style="padding-left: 20px;">{{comment.user.uid}}</span>
+                                            <div flex="80" ta-bind="text" ng-model="comment.text" ta-readonly='disabled' style="word-wrap: break-word;text-align: justify;text-indent: 25px;padding: 10px;"></div>
                                         </md-card-title-text>
                                     </md-card-title>
                                     <md-card-content>
-                                        <div ta-bind="text" ng-model="comment.text" ta-readonly='disabled' style="word-wrap: break-word;text-align: justify;text-indent: 25px;"></div>
                                     </md-card-content>
                                 </md-card>
                             </div>
